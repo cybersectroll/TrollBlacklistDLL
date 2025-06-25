@@ -1,1 +1,2 @@
-
+#cd pid directory
+cl.exe /nologo /W3 /O1 /MD /EHsc pid.cpp /link /DEBUG:NONE /OPT:REF /OPT:ICF /SUBSYSTEM:CONSOLE /OUT:pid.exe
