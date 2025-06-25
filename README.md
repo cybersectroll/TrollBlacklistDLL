@@ -19,6 +19,9 @@ usage: pid.exe -pid <local/remote $PID> [optional]-unhook <time in seconds>
 can it block av/edr dlls? Refer to table - obviously it depends how the av/edr dlls are loaded in the first place
 ![Image](https://github.com/user-attachments/assets/c14502a4-2833-43a6-8f82-2f66fdfdbc2b)
 
+## Release
+Refer to TrollBlacklistDLL.zip for the compiled binaries
+
 ## Upgrades (not pursuing)
 - convert it to c#
 - for pid.exe find other suitable ntdll functions to overwrite, now its hardcoded, may not always work
