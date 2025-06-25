@@ -11,6 +11,14 @@ usage: path.exe -path <path to file> [optional]-unhook 10
 <br>
 ![Image](https://github.com/user-attachments/assets/c90a01cc-85a5-4f53-a596-f773d6834d04)
 <img src="https://github.com/user-attachments/assets/c90a01cc-85a5-4f53-a596-f773d6834d04" alt="Image" style="float: left;" />
+<table>
+<tr>
+<td align="left">
+  <img src="https://github.com/user-attachments/assets/c90a01cc-85a5-4f53-a596-f773d6834d04" alt="Image" />
+</td>
+</tr>
+</table>
+
 
 ## pid.exe
 usage: pid.exe -pid <local/remote $PID> [optional]-unhook 10
