@@ -1,1 +1,1 @@
-
+cl.exe /nologo /W3 /O1 /MD /EHsc code.cpp /link /DEBUG:NONE /OPT:REF /OPT:ICF /SUBSYSTEM:CONSOLE /OUT:Injector.exe
