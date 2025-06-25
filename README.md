@@ -18,7 +18,7 @@ usage: pid.exe -pid <local/remote $PID> [optional]-unhook <seconds>
 ## Hmm.. 
 <br>
 can it block av/edr dlls? Refer to table
-![Image](https://github.com/user-attachments/assets/7ce1f875-9613-435e-85f9-c34c3bb57840)
+![Image](https://github.com/user-attachments/assets/f8b84364-0d27-43ed-9525-b16caa78fc06)
 
 ## Disclaimer
 Should only be used for educational purposes!
