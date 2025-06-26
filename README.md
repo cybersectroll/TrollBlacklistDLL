@@ -21,6 +21,8 @@ can it block av/edr dlls? Refer to table - obviously it depends how the av/edr d
 
 **note/correction: Edr #1 with pid.exe technique is successful in the sense it blocks dll from loading but later on, loading rubeus is still detected. likely, its doing a separate scan from (amsi) on the virtualalloc call for rubeus.**
 
+**note: the process of injection (virtuallalocex, writeprocessmemory) also must respect the av/edr for example Edr #1 detects injections to cmd.exe but powershell is ok**
+
 ## Release
 Refer to TrollBlacklistDLL.zip for the compiled binaries
 
