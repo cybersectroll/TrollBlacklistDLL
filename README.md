@@ -27,7 +27,6 @@ can it block av/edr dlls? Refer to table - obviously it depends how the av/edr d
 Refer to TrollBlacklistDLL.zip for the compiled binaries
 
 ## Upgrades (not pursuing)
-- convert it to c#
 - for pid.exe find other suitable ntdll functions to overwrite, now its hardcoded, may not always work
 - get it to work with the problematic ones in truthtable
 
