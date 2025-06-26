@@ -23,11 +23,17 @@ can it block av/edr dlls? Refer to table - obviously it depends how the av/edr d
 **note: the process of injection (virtuallalocex, writeprocessmemory) also must respect the av/edr parent-child relationship for example Edr #1 detects injections to cmd.exe but powershell is ok**
 **note: you need to find out if Dllname passed to LdrLoadDll whether its a full path or relative path when inserting into blacklist.txt**
 
+```
+Update!
+For the AV #1 detection on path.exe - was able to evade detection with the c# dll version
+For the EDR #3 werfault on path.exe - was able to get it to work on the c# exe/dll version <- I have no idea why it works  
+```
+
 ## Release
 Refer to TrollBlacklistDLL.zip for the compiled binaries
 
 ## Upgrades (not pursuing)
-- writing the code in c#
+- writing the code in c# and making it stable 
 - for pid.exe find other suitable ntdll functions (technically you can try other dlls) to overwrite, now its hardcoded, may not always work
 - get it to work with the problematic ones in table -> I believe the werfault is fixable, likely some sort of race condition   
 
