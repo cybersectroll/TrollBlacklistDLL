@@ -27,8 +27,9 @@ can it block av/edr dlls? Refer to table - obviously it depends how the av/edr d
 
 ```
 Update!
-For the AV #1 detection on path.exe - was able to evade detection with the c# dll version
-For the EDR #3 werfault on path.exe - was able to get it to work on the c# exe/dll version <- I have no idea why it works  
+For the AV #1 detection on path.exe - was able to evade detection (and stop amsi.dll loading, NOT av_edr.dll) with the c# dll version
+For the EDR #3 werfault on path.exe - was able to get it to work (and stop amsi.dll loading, NOT av_edr.dll) on the c# exe/dll version <- I have no idea why it works
+I re-emphasize that the AV/EDR might be bypassing LdrLoadDLL calls for the av_edr.dll 
 ```
 
 ## Release
