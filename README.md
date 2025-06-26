@@ -19,7 +19,7 @@ usage: pid.exe -pid <local/remote $PID> [optional]-unhook <time in seconds>
 can it block av/edr dlls? Refer to table - obviously it depends how the av/edr dlls are loaded in the first place
 ![Image](https://github.com/user-attachments/assets/c14502a4-2833-43a6-8f82-2f66fdfdbc2b)
 
-**note: Edr #1 with pid.exe technique is successful in the sense it blocks dll from loading but later on, loading rubeus is still detected. likely, its doing a separate scan from (amsi) on the virtualalloc call for rubeus.**
+**note/correction: Edr #1 with pid.exe technique is successful in the sense it blocks dll from loading but later on, loading rubeus is still detected. likely, its doing a separate scan from (amsi) on the virtualalloc call for rubeus.**
 
 ## Release
 Refer to TrollBlacklistDLL.zip for the compiled binaries
