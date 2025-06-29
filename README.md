@@ -1,4 +1,9 @@
 # TrollBlacklistDLL
+```diff
+! UPDATE 30/06/2025 
+! Released c# version - refer to csharp folder
+! Strongly advised to use cpp, if that fails, try c#
+```
 Reads blacklist.txt and blocks dlls from loading with option to unblock subsequently. Patches LdrLoadDll in local/remote process to return dll not found.
 - path.exe
   - spawns new process suspended followed by VirtualAllocEx, VirtualProtectEx, WriteProcessMemory, ResumeThread
@@ -36,7 +41,7 @@ I re-emphasize that the AV/EDR might be bypassing LdrLoadDLL calls for the av_ed
 Refer to TrollBlacklistDLL.zip for the compiled binaries
 
 ## Upgrades (not pursuing)
-- writing the code in c# and making it stable 
+- there is a race condition, trying to resolve that
 - for pid.exe find other suitable ntdll functions (technically you can try other dlls) to overwrite, now its hardcoded, may not always work
 - get it to work with the problematic ones in table -> I believe the werfault is fixable, likely some sort of race condition   
 
