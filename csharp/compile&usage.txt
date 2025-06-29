@@ -1,1 +1,48 @@
 
+
+
+###############
+Compiling
+	- !Make sure you have an updated csc.exe else you will receive errors (i.e supports up to c# 5)
+	- Alternatively use Developer Command Prompt for Visual Studio OR Visual studio itself 
+###############
+
+csc.exe /unsafe /target:exe /out:path.exe path-exe.cs
+csc.exe /unsafe /target:exe /out:pid.exe pid-exe.cs
+csc.exe /unsafe /target:library /out:path.dll path-dll.cs
+csc.exe /unsafe /target:library /out:pid.dll pid-dll.cs
+
+
+###############
+path.exe usage
+###############
+path.exe -path <binary_to_launch> [optional]-unhook <seconds> 
+
+e.g 
+.\path.exe -path "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -unhook 10
+
+###############
+pid.exe usage
+###############
+pid.exe -pid <local_or_remote_PID> [optional]-unhook <seconds> 
+
+e.g 
+.\pid.exe -pid $PID  #for this example, we inject locally 
+
+###############
+path.dll usage 
+###############
+[pathDLL]::Blacklist($null, <binary_to_launch>, <unhook_seconds>, <path_to_blacklist.txt>)
+
+e.g 
+[System.Reflection.Assembly]::LoadFrom("C:\path.dll")
+[pathDLL]::Blacklist($null, "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe", 0, "C:\blacklist.txt")
+
+###############
+pid.dll usage 
+###############
+[pidDLL]::Blacklist(<local_or_remote_PID>, <unhook_seconds>, <path_to_blacklist.txt>)
+
+e.g 
+[System.Reflection.Assembly]::LoadFrom("C:\pid.dll")
+[pidDLL]::Blacklist($PID, 0, "C:\blacklist.txt")
